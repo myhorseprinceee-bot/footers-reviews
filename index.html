@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Відгуки про Footers</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f6f8;
+            color: #222;
+        }
+
+        /* Шапка */
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 22px 20px;
+        }
+
+        .header-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .header-button {
+            background: #111;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Основний блок */
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .intro {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 35px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .intro h1 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 36px;
+            line-height: 1.2;
+        }
+
+        .intro p {
+            color: #555;
+            font-size: 17px;
+            line-height: 1.7;
+            margin: 10px 0;
+        }
+
+        /* Відгуки */
+
+        .reviews-title {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .review {
+            background: white;
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .review-name {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .stars {
+            color: #f5b301;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .review-date {
+            color: #999;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+
+        /* Форма */
+
+        .form-section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 45px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-section h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .form-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px 15px;
+            border: 1px solid #d8d8d8;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #111;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #111;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background: #333;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #888;
+            line-height: 1.5;
+        }
+
+        /* Футер */
+
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            color: #888;
+            font-size: 13px;
+        }
+
+        /* Мобільна версія */
+
+        @media (max-width: 600px) {
+
+            .header-inner {
+                gap: 15px;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .header-button {
+                padding: 10px 14px;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+
+            .intro,
+            .form-section {
+                padding: 25px;
+            }
+
+            .intro h1 {
+                font-size: 28px;
+            }
+
+            .intro p {
+                font-size: 15px;
+            }
+
+            .review-header {
+                align-items: flex-start;
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            Footers — відгуки
+        </div>
+
+        <a href="#leave-review" class="header-button">
+            Залишити відгук
+        </a>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- Вступ -->
+
+    <section class="intro">
+
+        <h1>Відгуки про Footers</h1>
+
+        <p>
+            Тут зібрані відгуки покупців про інтернет-магазин Footers.
+            Користувачі можуть поділитися своїм досвідом замовлення
+            взуття, одягу та інших товарів.
+        </p>
+
+        <p>
+            Перед покупкою рекомендуємо ознайомитися з відгуками інших
+            покупців та звернути увагу на їхній досвід оплати, доставки,
+            отримання товару та повернення.
+        </p>
+
+        <p>
+            Якщо ви вже робили замовлення у Footers, можете залишити
+            власний відгук.
+        </p>
+
+    </section>
+
+
+    <!-- Відгуки -->
+
+    <section>
+
+        <h2 class="reviews-title">
+            Відгуки покупців
+        </h2>
+
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    Анна Гончарова
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                Якщо ви купите кросівки і виявиться, що вони все-таки не підходять за розміром, то повернення зробити не зможете. Навіть не зможете зв'язатися з продавцем. Попри спроби дозвонитися з різних номерів мені не вдалось.
+                <br><br>
+                Товар — підробка середньої якості.
+                <br><br>
+                Рекомендація до повернення: оформлюєте легке повернення на Новій пошті і вкладаєте всередину заяву на повернення на їх ФОП та копію чека. Ці аферисти мають їх забрати.
+            </p>
+
+            <div class="review-date">
+                05.05.2026
+            </div>
+
+        </div>
+
+
+        <!-- Тут з'являтимуться нові відгуки після
+             їхньої модерації -->
+
+    </section>
+
+
+    <!-- Форма -->
+
+    <section class="form-section" id="leave-review">
+
+        <h2>
+            Залишити відгук
+        </h2>
+
+        <p class="form-description">
+            Якщо ви робили замовлення у Footers, розкажіть про свій
+            досвід. Будь ласка, вказуйте лише достовірну інформацію.
+        </p>
+
+
+        <form
+            action="https://formspree.io/f/xnpajgek"
+            method="POST"
+        >
+
+            <div class="form-group">
+
+                <label for="name">
+                    Ваше ім'я
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Наприклад, Анна"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="rating">
+                    Оцінка
+                </label>
+
+                <select
+                    id="rating"
+                    name="rating"
+                    required
+                >
+
+                    <option value="">
+                        Оберіть оцінку
+                    </option>
+
+                    <option value="5">
+                        ★★★★★ — 5/5
+                    </option>
+
+                    <option value="4">
+                        ★★★★☆ — 4/5
+                    </option>
+
+                    <option value="3">
+                        ★★★☆☆ — 3/5
+                    </option>
+
+                    <option value="2">
+                        ★★☆☆☆ — 2/5
+                    </option>
+
+                    <option value="1">
+                        ★☆☆☆☆ — 1/5
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="review">
+                    Ваш відгук
+                </label>
+
+                <textarea
+                    id="review"
+                    name="review"
+                    placeholder="Розкажіть про свій досвід замовлення..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="order">
+                    Номер замовлення (необов'язково)
+                </label>
+
+                <input
+                    type="text"
+                    id="order"
+                    name="order"
+                    placeholder="Наприклад, 12345"
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit-button"
+            >
+                Надіслати відгук
+            </button>
+
+
+            <p class="note">
+                Надсилаючи відгук, ви погоджуєтесь на його публікацію
+                на цій сторінці. Не вказуйте дані банківської картки,
+                паролі та іншу конфіденційну інформацію.
+            </p>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    © 2026 Відгуки про Footers
+
+</footer>
+
+</body>
+</html>
