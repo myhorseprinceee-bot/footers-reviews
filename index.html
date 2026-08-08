@@ -11,6 +11,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -18,131 +22,209 @@
             color: #222;
         }
 
-        /* Шапка */
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
             background: #ffffff;
             border-bottom: 1px solid #e5e5e5;
-            padding: 22px 20px;
+            padding: 20px;
         }
 
         .header-inner {
             max-width: 1000px;
             margin: 0 auto;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            gap: 20px;
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
             color: #111;
         }
 
         .header-button {
+            display: inline-block;
+
             background: #111;
-            color: white;
+            color: #ffffff;
+
             text-decoration: none;
+
             padding: 12px 20px;
+
             border-radius: 8px;
+
             font-size: 14px;
             font-weight: 600;
+
+            transition: 0.2s;
         }
 
-        /* Основний блок */
+        .header-button:hover {
+            background: #333;
+        }
+
+
+        /* =========================
+           MAIN
+        ========================= */
 
         main {
             max-width: 1000px;
             margin: 0 auto;
-            padding: 60px 20px;
+
+            padding: 50px 20px 70px;
         }
 
+
+        /* =========================
+           INTRO
+        ========================= */
+
         .intro {
-            background: white;
+            background: #ffffff;
+
             border-radius: 16px;
+
             padding: 40px;
-            margin-bottom: 35px;
+
+            margin-bottom: 40px;
+
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
         }
 
         .intro h1 {
-            margin-top: 0;
-            margin-bottom: 20px;
+            margin: 0 0 22px;
+
             font-size: 36px;
             line-height: 1.2;
+
+            color: #111;
         }
 
         .intro p {
+            margin: 12px 0;
+
             color: #555;
+
             font-size: 17px;
             line-height: 1.7;
-            margin: 10px 0;
         }
 
-        /* Відгуки */
+
+        /* =========================
+           REVIEWS
+        ========================= */
 
         .reviews-title {
-            font-size: 26px;
-            margin-bottom: 20px;
+            margin: 0 0 22px;
+
+            font-size: 28px;
+
+            color: #111;
         }
 
         .review {
-            background: white;
+            background: #ffffff;
+
             border-radius: 14px;
+
             padding: 25px;
+
             margin-bottom: 18px;
+
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
         }
 
         .review-header {
             display: flex;
+
             justify-content: space-between;
             align-items: center;
+
+            gap: 15px;
+
             margin-bottom: 12px;
         }
 
         .review-name {
-            font-weight: 700;
             font-size: 18px;
+
+            font-weight: 700;
+
+            color: #111;
         }
 
         .stars {
             color: #f5b301;
+
+            font-size: 18px;
+
             letter-spacing: 2px;
+
+            white-space: nowrap;
         }
 
         .review-text {
-            color: #555;
-            line-height: 1.6;
             margin: 0;
+
+            color: #444;
+
+            font-size: 16px;
+
+            line-height: 1.65;
+
+            white-space: normal;
         }
 
         .review-date {
-            color: #999;
-            font-size: 13px;
             margin-top: 15px;
+
+            color: #999;
+
+            font-size: 13px;
         }
 
-        /* Форма */
+
+        /* =========================
+           FORM
+        ========================= */
 
         .form-section {
-            background: white;
+            background: #ffffff;
+
             border-radius: 16px;
+
             padding: 40px;
+
             margin-top: 45px;
+
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
         }
 
         .form-section h2 {
-            margin-top: 0;
+            margin: 0 0 12px;
+
             font-size: 28px;
+
+            color: #111;
         }
 
         .form-description {
+            margin: 0 0 28px;
+
             color: #666;
+
+            font-size: 16px;
+
             line-height: 1.6;
-            margin-bottom: 25px;
         }
 
         .form-group {
@@ -151,20 +233,33 @@
 
         label {
             display: block;
+
             margin-bottom: 8px;
+
             font-weight: 600;
+
+            color: #222;
         }
 
         input,
         select,
         textarea {
             width: 100%;
+
             padding: 13px 15px;
+
             border: 1px solid #d8d8d8;
+
             border-radius: 8px;
-            font-size: 15px;
+
+            background: #ffffff;
+
             font-family: inherit;
+
+            font-size: 15px;
+
             outline: none;
+
             transition: border-color 0.2s;
         }
 
@@ -175,20 +270,33 @@
         }
 
         textarea {
-            min-height: 140px;
+            min-height: 150px;
+
             resize: vertical;
         }
 
         .submit-button {
             width: 100%;
+
             padding: 14px;
+
             border: none;
+
             border-radius: 8px;
+
             background: #111;
-            color: white;
+
+            color: #ffffff;
+
+            font-family: inherit;
+
             font-size: 16px;
+
             font-weight: 600;
+
             cursor: pointer;
+
+            transition: 0.2s;
         }
 
         .submit-button:hover {
@@ -196,39 +304,57 @@
         }
 
         .note {
-            margin-top: 15px;
-            font-size: 13px;
+            margin: 15px 0 0;
+
             color: #888;
+
+            font-size: 13px;
+
             line-height: 1.5;
         }
 
-        /* Футер */
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             text-align: center;
+
             padding: 35px 20px;
+
             color: #888;
+
             font-size: 13px;
         }
 
-        /* Мобільна версія */
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 600px) {
 
+            header {
+                padding: 16px;
+            }
+
             .header-inner {
-                gap: 15px;
+                align-items: center;
             }
 
             .logo {
-                font-size: 20px;
+                font-size: 18px;
             }
 
             .header-button {
                 padding: 10px 14px;
+
+                font-size: 13px;
             }
 
             main {
-                padding: 30px 15px;
+                padding: 30px 15px 50px;
             }
 
             .intro,
@@ -244,39 +370,71 @@
                 font-size: 15px;
             }
 
+            .reviews-title {
+                font-size: 24px;
+            }
+
             .review-header {
-                align-items: flex-start;
-                gap: 10px;
                 flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .review {
+                padding: 22px;
+            }
+
+            .review-text {
+                font-size: 15px;
             }
         }
     </style>
 </head>
 
+
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
+
     <div class="header-inner">
 
         <div class="logo">
             Footers — відгуки
         </div>
 
-        <a href="#leave-review" class="header-button">
+        <a
+            href="#leave-review"
+            class="header-button"
+        >
             Залишити відгук
         </a>
 
     </div>
+
 </header>
 
 
+<!-- =========================
+     MAIN
+========================= -->
+
 <main>
 
-    <!-- Вступ -->
+
+    <!-- =========================
+         INTRO
+    ========================= -->
 
     <section class="intro">
 
-        <h1>Відгуки про Footers</h1>
+        <h1>
+            Відгуки про Footers
+        </h1>
 
         <p>
             Тут зібрані відгуки покупців про інтернет-магазин Footers.
@@ -298,13 +456,21 @@
     </section>
 
 
-    <!-- Відгуки -->
+
+    <!-- =========================
+         REVIEWS
+    ========================= -->
 
     <section>
 
         <h2 class="reviews-title">
             Відгуки покупців
         </h2>
+
+
+        <!-- =========================
+             ВІДГУК АННИ
+        ========================= -->
 
         <div class="review">
 
@@ -321,29 +487,364 @@
             </div>
 
             <p class="review-text">
-                Якщо ви купите кросівки і виявиться, що вони все-таки не підходять за розміром, то повернення зробити не зможете. Навіть не зможете зв'язатися з продавцем. Попри спроби дозвонитися з різних номерів мені не вдалось.
+                Якщо ви купите кросівки і виявиться, що вони все-таки не
+                підходять за розміром, то повернення зробити не зможете.
+                Навіть не зможете зв'язатися з продавцем. Попри спроби
+                дозвонитися з різних номерів мені не вдалось.
                 <br><br>
                 Товар — підробка середньої якості.
                 <br><br>
-                Рекомендація до повернення: оформлюєте легке повернення на Новій пошті і вкладаєте всередину заяву на повернення на їх ФОП та копію чека. Ці аферисти мають їх забрати.
+                Рекомендація до повернення: оформлюєте легке повернення
+                на Новій пошті і вкладаєте всередину заяву на повернення
+                на їх ФОП та копію чека. Ці аферисти мають їх забрати.
             </p>
 
             <div class="review-date">
-                05.05.2026
+                3 місяці тому
             </div>
 
         </div>
 
 
-        <!-- Тут з'являтимуться нові відгуки після
-             їхньої модерації -->
+
+        <!-- ==================================================
+             МІСЦЕ ДЛЯ ВІДГУКУ №2
+
+             Щоб опублікувати:
+             1. Прибери символи <!-- та --> навколо блоку.
+             2. Заміни ім'я.
+             3. Заміни зірки.
+             4. Заміни текст.
+             5. Заміни дату.
+        ================================================== -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
+
+
+        <!-- =========================
+             МІСЦЕ №3
+        ========================= -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
+
+
+        <!-- =========================
+             МІСЦЕ №4
+        ========================= -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
+
+
+        <!-- =========================
+             МІСЦЕ №5
+        ========================= -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
+
+
+        <!-- =========================
+             МІСЦЕ №6
+        ========================= -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
+
+
+        <!-- =========================
+             МІСЦЕ №7
+        ========================= -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
+
+
+        <!-- =========================
+             МІСЦЕ №8
+        ========================= -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
+
+
+        <!-- =========================
+             МІСЦЕ №9
+        ========================= -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
+
+
+        <!-- =========================
+             МІСЦЕ №10
+        ========================= -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
+
+
+        <!-- =========================
+             МІСЦЕ №11
+        ========================= -->
+
+        <!--
+        <div class="review">
+
+            <div class="review-header">
+
+                <div class="review-name">
+                    ІМ'Я ПОКУПЦЯ
+                </div>
+
+                <div class="stars">
+                    ★☆☆☆☆
+                </div>
+
+            </div>
+
+            <p class="review-text">
+                ТЕКСТ РЕАЛЬНОГО ВІДГУКУ
+            </p>
+
+            <div class="review-date">
+                ДАТА
+            </div>
+
+        </div>
+        -->
+
 
     </section>
 
 
-    <!-- Форма -->
 
-    <section class="form-section" id="leave-review">
+    <!-- =========================
+         FORM
+    ========================= -->
+
+    <section
+        class="form-section"
+        id="leave-review"
+    >
 
         <h2>
             Залишити відгук
@@ -355,10 +856,26 @@
         </p>
 
 
+        <!--
+        ВАЖЛИВО:
+
+        Тут потрібно замінити YOUR_FORM_ID
+        на ID твоєї форми Formspree.
+
+        Наприклад:
+
+        https://formspree.io/f/abcd1234
+
+        -->
+
+
         <form
-            action="https://formspree.io/f/xnpajgek"
+            action="https://formspree.io/f/YOUR_FORM_ID"
             method="POST"
         >
+
+
+            <!-- ІМ'Я -->
 
             <div class="form-group">
 
@@ -370,12 +887,14 @@
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Введіть ім'я"
+                    placeholder="Наприклад, Анна"
                     required
                 >
 
             </div>
 
+
+            <!-- EMAIL -->
 
             <div class="form-group">
 
@@ -387,12 +906,14 @@
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Введіть email"
+                    placeholder="example@email.com"
                     required
                 >
 
             </div>
 
+
+            <!-- ОЦІНКА -->
 
             <div class="form-group">
 
@@ -435,6 +956,8 @@
             </div>
 
 
+            <!-- ТЕКСТ ВІДГУКУ -->
+
             <div class="form-group">
 
                 <label for="review">
@@ -451,6 +974,8 @@
             </div>
 
 
+            <!-- НОМЕР ЗАМОВЛЕННЯ -->
+
             <div class="form-group">
 
                 <label for="order">
@@ -461,11 +986,13 @@
                     type="text"
                     id="order"
                     name="order"
-                    placeholder="Введіть номер замовлення"
+                    placeholder="Наприклад, 12345"
                 >
 
             </div>
 
+
+            <!-- КНОПКА -->
 
             <button
                 type="submit"
@@ -481,18 +1008,26 @@
                 паролі та іншу конфіденційну інформацію.
             </p>
 
+
         </form>
 
     </section>
 
+
 </main>
 
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
     © 2026 Відгуки про Footers
 
 </footer>
+
 
 </body>
 </html>
